@@ -13,7 +13,7 @@ export default function AppHeader() {
     <header className="app-header">
       <div className="header-left">
         <img
-          src="/PredyxLab-logo.png"
+          src={`${process.env.PUBLIC_URL}/Predyxlab-logo.png`}
           alt="PredyxLab logo"
           className="app-header-logo"
         />
