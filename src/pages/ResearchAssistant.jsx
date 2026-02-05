@@ -77,6 +77,7 @@ export default function ResearchAssistant() {
         <h1 className="title">Research Assistant</h1>
         <p className="subtitle">
           Upload financial documents and ask questions grounded in the data.
+          <h5>*Only PDFs upto 10MB accepted</h5>
         </p>
 
         {/* -------- Upload -------- */}
