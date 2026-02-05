@@ -1,0 +1,83 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 24px;
+  background: #0b1220;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.app-close-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+
+  padding: 4px 8px;
+  line-height: 1;
+}
+
+.app-close-btn:hover {
+  color: #ff6b6b;
+}
+
+.app-header-logo {
+    height: 32px;
+    width: auto;
+
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: linear-gradient(90deg, #020617, #020617);
+  color: white;
+}
+
+/* LEFT SIDE: logo + title */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-header-logo {
+  height: 36px;     /* adjust if needed */
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* CLOSE BUTTON */
+.app-close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
