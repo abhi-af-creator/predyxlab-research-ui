@@ -2,9 +2,7 @@ import { useState } from "react";
 import "./ResearchAssistant.css";
 import AppHeader from "../components/AppHeader";
 
-const API_BASE =
-  process.env.REACT_APP_API_BASE || "http://127.0.0.1:8010";
-
+const API_BASE = process.env.REACT_APP_API_BASE;
 export default function ResearchAssistant() {
   /* ---------------- STATE ---------------- */
   const [file, setFile] = useState(null);
