@@ -23,7 +23,7 @@ export default function ResearchAssistant() {
     formData.append("file", file);
 
     try {
-      const res = await fetch(`${API_BASE}/ingest`, {
+      const res = await fetch(`${API_BASE}/rag/ingest`, {
         method: "POST",
         body: formData
       });
@@ -47,7 +47,7 @@ export default function ResearchAssistant() {
     setSources([]);
 
     try {
-      const res = await fetch(`${API_BASE}/chat`, {
+      const res = await fetch(`${API_BASE}/rag/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
