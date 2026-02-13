@@ -3,6 +3,7 @@ import "./ResearchAssistant.css";
 import AppHeader from "../components/AppHeader";
 
 const API_BASE = process.env.REACT_APP_API_BASE;
+
 export default function ResearchAssistant() {
   /* ---------------- STATE ---------------- */
   const [file, setFile] = useState(null);
@@ -22,7 +23,7 @@ export default function ResearchAssistant() {
     formData.append("file", file);
 
     try {
-      const res = await fetch(`${API_BASE}/rag/ingest`, {
+      const res = await fetch(`${API_BASE}/ingest`, {
         method: "POST",
         body: formData
       });
@@ -46,7 +47,7 @@ export default function ResearchAssistant() {
     setSources([]);
 
     try {
-      const res = await fetch(`${API_BASE}/rag/chat`, {
+      const res = await fetch(`${API_BASE}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
